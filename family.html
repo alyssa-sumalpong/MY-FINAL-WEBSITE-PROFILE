@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: hsl(327, 78%, 73%);
+            font-family: Arial, sans-serif;
+            color: hsl(327, 78%, 73%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e42190;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #17111f;
+        }
+
+        .family-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .box-img img {
+            width: 100%;
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #161604; /* Black color for emphasis */
+        }
+
+        .btn-back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Family <span>Sumalpong</span></h1>
+        <div class="family-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="sarita.jpg" alt="Mama">
+                </div>
+                <div class="content">
+                    <h3>Sarita R. Sumalpong</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="alvin.jpg" alt="Papa">
+                </div>
+                <div class="content">
+                    <h3>Alvin L. Sumalpong</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="vea.jpg" alt="Older Sister">
+                </div>
+                <div class="content">
+                    <h3>Vea Allaine R. Sumalpong</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="alynna.jpg" alt="Older Twin">
+                </div>
+                <div class="content">
+                    <h3>Alynna R. Sumalpong</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="yesha.jpg" alt="Me">
+                </div>
+                <div class="content">
+                    <h3>Alyssa R. Sumalpong</h3>
+                </div>
+            </div>
+            <a href="index.html" class="btn-back">Back</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            background-color: hsl(327, 78%, 73%);
+            font-family: Arial, sans-serif;
+            color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e42190;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #17111f;
+        }
+
+        .square-container {
+            background-color: #ff82e297;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px; /* Adjust the width of the images */
+            margin-right: 20px;
+            border-radius: 5px; /* Add rounded corners to the images */
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            color: #120303; /* Text color inside square container */
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn-back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My <span>Skills</span></h1>
+        <div class="about-skills">
+            <div class="square-container" id="htmlCss">
+                <img src="hc.png" alt="HTML & CSS">
+                <p class="hidden">Knows a little and the basic about HTML and CSS.</p>
+                <button onclick="showText('htmlCss')">Show</button>
+                <button onclick="hideText('htmlCss')">Hide</button>
+            </div>
+            <div class="square-container" id="author">
+                <img src="author.png" alt="Author">
+                <p class="hidden">Published author and certified author of the Philippines.</p>
+                <button onclick="showText('author')">Show</button>
+                <button onclick="hideText('author')">Hide</button>
+            </div>
+            <div class="square-container" id="database">
+                <img src="db.jpg" alt="Database">
+                <p class="hidden">Have some knowledge about database (SQL)</p>
+                <button onclick="showText('database')">Show</button>
+                <button onclick="hideText('database')">Hide</button>
+            </div>
+            <div class="square-container" id="cosplaying">
+                <img src="cp.jpg" alt="Cosplaying">
+                <p class="hidden">Cosplaying, Online hosting.</p>
+                <button onclick="showText('cosplaying')">Show</button>
+                <button onclick="hideText('cosplaying')">Hide</button>
+            </div>
+            <div class="square-container" id="dancing">
+                <img src="note.webp" alt="Dancing">
+                <p class="hidden">Dancing, Singing, Playing 6-strings instruments (Acoustic guitar, Electric guitar, and Ukulele).</p>
+                <button onclick="showText('dancing')">Show</button>
+                <button onclick="hideText('dancing')">Hide</button>
+            </div>
+        </div>
+        <a href="index.html" class="btn-back">Back</a>
+    </div>
+
+    <script>
+        function showText(elementId) {
+            var element = document.getElementById(elementId);
+            var paragraph = element.querySelector('p');
+            paragraph.classList.remove("hidden");
+        }
+
+        function hideText(elementId) {
+            var element = document.getElementById(elementId);
+            var paragraph = element.querySelector('p');
+            paragraph.classList.add("hidden");
+        }
+    </script>
+</body>
+</html>

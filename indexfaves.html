@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Slideshow</title>
+    <link rel="stylesheet" href="stylesfaves.css">
+    <style>
+        /* Center the images horizontally */
+        .slideshow-container {
+            text-align: center;
+        }
+
+        /* Adjust the width of the images */
+        .mySlides img {
+            display: inline-block; /* Ensure images are displayed as blocks */
+            max-width: 100%; /* Adjust this value as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="abba.jpg" style="width:40%">
+            <div class="text">SUGGESTED MUSIC: CHIQUITITA - ABBA</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pobw.jpg" style="width:40%">
+            <div class="text">SUGGESTED MOVIE: PERKS OF BEING A WALLFLOWER</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="op.jpg" style="width:40%;">
+            <div class="text">SUGGESTED ANIME: ONE PIECE</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="DISNEY.jpeg" style="width:40%">
+            <div class="text">SUGGESTED DISNEY FILM: ENCANTO</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="books.jpeg" style="width:55%">
+            <div class="text">SUGGESTED BOOKS: SUBTLE ART OF NOT GIVING A FUCK/EVERYTHING IS FUCKED</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="FRIENDS.jpg" style="width:40%">
+            <div class="text">SUGGESTED SITCOM: FRIENDS</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="BILI.webp" style="width:40%">
+            <div class="text">SUGGESTED APP: BILI-BILI</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="YUM.jpg" style="width:65%">
+            <div class="text">SUGGESTED SNACK: AVOCADO WITH MILK & ICE</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="PANCIT.webp" style="width:40%">
+            <div class="text">SUGGESTED FOOD: PANCIT NEGRA</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="BEACH.jpg" style="width:65%">
+            <div class="text">SUGGESTED PLACE TO VISIT: PUNTA ALMARA (BEACH)</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+
+    <script src="scriptfaves.js"></script>
+</body>
+</html>

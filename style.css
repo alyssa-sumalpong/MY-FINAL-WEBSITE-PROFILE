@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font family: sans-serif;
+}
+.container{
+    background: #8ad7e7;
+    min-height: 100vh;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color:#180909;
+    cursor: pointer;
+}
+.logo img{
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+.active{
+    color: #fa192f !important;
+}
+.btn{
+    color:black !important;
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color:#180909;
+}
+.app-text{
+    width: 50%;
+    float: left;
+}
+.app-text h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.app-text h4{
+    font-size: 15px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+}
+.app-text p{
+    width: 650px;
+    font size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #000;
+}
+.app-picture{
+    width: 50%;
+    float: right;
+}
+.app-picture img{
+    width: 50%;
+    margin-top: -20px;
+    padding-left: 200px;
+}

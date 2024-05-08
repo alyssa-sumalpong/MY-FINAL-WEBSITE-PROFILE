@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Background</title>
+    <style>
+        body {
+            background-color: hsl(327, 78%, 73%);
+            font-family: Arial, sans-serif;
+            color: #555;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #e421a0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #17111f;
+        }
+
+        .box-container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100px; /* Adjust the width of the images */
+            margin-right: 20px;
+            border-radius: 5px; /* Add rounded corners to the images */
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .btn-back {
+            display: block;
+            width: 100px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-back:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span>Educational</span> Background</h1>
+        <div class="about-text">
+            <div class="box-container" id="elementary">
+                <img src="elem.png" alt="Elementary School">
+                <p class="hidden">Elementary: San Agustin, Elementary School (2016-2017)</p>
+                <button onclick="showText('elementary')">Show</button>
+                <button onclick="hideText('elementary')">Hide</button>
+            </div>
+            <div class="box-container" id="secondary jh">
+                <img src="tobog.png" alt="High School">
+                <p class="hidden">Secondary: Junior High School - Tobog High School (2017-2020)</p>
+                <button onclick="showText('secondary jh')">Show</button>
+                <button onclick="hideText('secondary jh')">Hide</button>
+            </div>
+            <div class="box-container" id="secondary sh">
+                <img src="occ.jpeg" alt="High School">
+                <p class="hidden">Secondary: Senior High School - Oas, Community, College (2020-2022)</p>
+                <button onclick="showText('secondary sh')">Show</button>
+                <button onclick="hideText('secondary sh')">Hide</button>
+            </div>
+            <div class="box-container" id="tertiary">
+                <img src="bupc.png" alt="College">
+                <p class="hidden">Tertiary: Bicol University Polangui Campus. Computer Studies Department (2022- ongoing)</p>
+                <button onclick="showText('tertiary')">Show</button>
+                <button onclick="hideText('tertiary')">Hide</button>
+            </div>
+            <a href="index.html" class="btn-back">Back</a>
+        </div>
+    </div>
+
+    <script>
+        function showText(elementId) {
+            var element = document.getElementById(elementId);
+            var paragraph = element.querySelector('p');
+            paragraph.classList.remove("hidden");
+        }
+        
+        function hideText(elementId) {
+            var element = document.getElementById(elementId);
+            var paragraph = element.querySelector('p');
+            paragraph.classList.add("hidden");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #b445a5, #e995de); /* Barbie-inspired pink gradient */
+            font-family: Arial, sans-serif;
+            color: #fff; /* Default text color */
+        }
+
+        /* Style for the container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style for the menu */
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu ul li.logo img {
+            width: 100px; /* Adjust the logo size as needed */
+        }
+
+        .menu ul li a.btn {
+            text-decoration: none;
+            color: #2e1d2c; /* Button text color */
+            padding: 10px 15px;
+            border: 1px solid #e995de; /* Button border color */
+            border-radius: 5px;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        /* Style for the banner */
+        .banner {
+            width: 80%;
+            height: 70%;
+            top: 25%;
+            left: 130px;
+            position: absolute;
+            color: #fff; /* Text color */
+            overflow: hidden;
+        }
+
+        .banner .app-text {
+            flex: 1;
+            width: 50%;
+            float: left;
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-text h1 {
+            font-size: 43px;
+            width: 640px;
+            position: relative;
+            margin-left: 40px;
+        }
+
+        .app-text h4 {
+            font-size: 15px;
+            width: 640px;
+            position: relative;
+            margin-left: 40px;
+        }
+
+        .app-text p {
+            width: 650px;
+            font-size: 15px;
+            margin: 30px 0 30px 40px;
+            line-height: 25px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner .app-picture {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .banner .app-picture img {
+            max-width: 20%;
+            height: auto;
+            float: right; /* Align the image to the right */
+        }
+
+        /* Style for the media icons */
+        .media-icons {
+            position: absolute;
+            bottom: 20px; /* Adjust as needed */
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            z-index: 2;
+        }
+
+        .media-icons div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .media-icons a i {
+            font-size: 24px;
+        }
+
+        .media-icons span {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .menu ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="logo"><img src="barbie.png" alt="Logo"></li>
+                <li><a href="resume.html" class="btn">My Resume</a></li>
+                <li><a href="education.html" class="btn">Education</a></li>
+                <li><a href="skills.html" class="btn">Skills</a></li>
+                <li><a href="family.html" class="btn">Family</a></li>
+                <li><a href="friends.html" class="btn">Friends</a></li>
+                <li><a href="indexfaves.html" class="btn">My Favorites</a></li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <div class="app-text">
+                <span>Welcome! How are you?</span><br><br><span>This Barbie is a Programming Student!</span>
+                <h1>I am Aly!</h1>
+                <h4>Bachelor of Science in Information Technology Student</h4>
+                <p>Greetings! My full name is Alyssa R. Sumalpong. And you can call me Alyssa, Yesha, or maybe Aly.<br>Currently 20 years old, born on February 15, 2004 at Fabella Hospital around Manila.<br>I'm currently a second-year BS Information Technology student at Bicol University Polangui Campus, Computer Studies Department.<br>Right now, I am residing at San Agustin, Oas, Albay.</p>
+                <h4>Checkout my Website Profile! Get to know me more!</h4>
+            </div>
+            <div class="app-picture">
+                <img src="alyssa.jpg" alt="Alyssa's Picture">
+                <!-- Visible audio buttons -->
+                <div style="text-align: center;">
+                    <p style="text-align: center; font-size: 16px; margin-top: 270px; margin-left: 58%; max-width: 50%; position: fixed; text-align: center; color: rgba(138, 23, 98, 0.803);">CLICK ONE AUDIO TO PLAY SOME BARBIE'S TRACK!</p>
+                    <audio controls style="margin-top: 300px; margin-left: 10%; max-width: 30%; position: fixed; text-align: center;">
+                        <source src="derek.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div style="text-align: center;">
+                    <audio controls style="margin-top: 380px; margin-left: 10%; max-width: 30%; position: fixed; text-align: center;">
+                        <source src="dua.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div style="text-align: center;">
+                    <audio controls style="margin-top: 450px; margin-left: 10%; max-width: 30%; position: fixed; text-align: center;">
+                        <source src="brb.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <div class="media-icons">
+                <div>
+                    <a href="https://www.facebook.com/alyssa.sumalpong.9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <span>Facebook</span>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/binibiningyeshaaa/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <span>Instagram</span>
+                </div>
+                <div>
+                    <a href="https://github.com/alyssa-sumalpong" target="_blank"><i class="fab fa-github"></i></a>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
